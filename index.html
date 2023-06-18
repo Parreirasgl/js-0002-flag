@@ -1,0 +1,74 @@
+<!-- Project from section 7 of the course 
+  "The Complete 2023 Web Development Bootcamp",
+  in which the Lao's flag was made, using CSS, 
+  from a pre-defined HTML code. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    /* A red retangle was created: */
+    .flag {
+      position: relative;
+      height: 600px;
+      width: 900px;
+      background-color: red;
+    }
+    /* The white text was positioned: */
+    .flag > p {
+      position: relative;
+      top: 30px;
+      left: 280px;
+      font-size: 60pt;
+      color: white;
+    }
+    /* The blue band was created: */
+    .flag > div {
+      position: absolute;
+      top: 200px;
+      height: 200px;
+      width: 900px;
+      background-color:darkblue;
+    }
+    /* The white circle was created and the balck 
+    text was positioned: */
+    .flag > div p {
+      position: relative;
+      bottom: 30px;
+      left: 340px;
+      text-align: center;
+      font-size: 40pt;
+      color: black;
+      height: 150px;
+      width: 150px;
+      background-color: white;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
+<body>
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of Laos</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
